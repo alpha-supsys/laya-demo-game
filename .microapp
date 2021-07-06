@@ -1,0 +1,11 @@
+{
+  "name": "laya-demo-game",
+  "namespace": "tools",
+  "url": "laya-demo-game.alpha-supsys.com",
+  "image": "uhub.service.ucloud.cn/alpha_supsys/rs-static-webapp:base_0.1",
+  "cmd": [],
+  "env": {
+    "RSW_WEB_STATICPATH": "/app/static"
+  },
+  "sync": false
+}
