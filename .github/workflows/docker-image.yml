@@ -19,4 +19,4 @@ jobs:
     - name: Push the tagged Docker image
       run: docker push ${{steps.vars.outputs.tag}}
     - name: Autodeploy
-      run: curl -X POST -H "Content-Type:application/json; charset=utf-8" -d "`${GITHUB_WORKSPACE}/.microapp`" ${{ secrets.AUTODEPLOY_URL }}
+      run: curl -X POST -H "Content-Type:application/json; charset=utf-8" -d "{'name':'laya-demo-game','namespace':'tools','url':'laya-demo-game.alpha-supsys.com','image':'${{steps.vars.outputs.tag}}','cmd':[],'env':{'RSW_WEB_STATICPATH':'/app/static'},'sync':false}" ${{ secrets.AUTODEPLOY_URL }}
