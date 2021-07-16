@@ -24,7 +24,7 @@
             this.socket.on(Laya.Event.MESSAGE, this, this.onMsg);
             this.socket.on(Laya.Event.CLOSE, this, this.onClose);
             this.socket.on(Laya.Event.ERROR, this, this.onErr);
-            this.socket.connectByUrl("ws://laya-demo-game-backend.alpha-supsys.com/api/beta/ws");
+            this.socket.connectByUrl("wss://laya-demo-game-backend.alpha-supsys.com/api/beta/ws");
         }
         onOpen(e) {
         }
