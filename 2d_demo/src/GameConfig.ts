@@ -3,6 +3,7 @@ import GameUI from "./script/GameUI"
 import GameControl from "./script/GameControl"
 import Bullet from "./script/Bullet"
 import DropBox from "./script/DropBox"
+import Title from "./script/Title"
 /*
 * 游戏初始化配置;
 */
@@ -26,6 +27,7 @@ export default class GameConfig{
         reg("script/GameControl.ts",GameControl);
         reg("script/Bullet.ts",Bullet);
         reg("script/DropBox.ts",DropBox);
+        reg("script/Title.ts", Title);
     }
 }
 GameConfig.init();

@@ -165,6 +165,23 @@
         }
     }
 
+    class Title {
+        constructor() {
+        }
+        onEnable() {
+            var txt = new Laya.Text();
+            txt.text = "hello_world";
+            txt.color = "#ffffff";
+            txt.font = "Ya Hei";
+            txt.fontSize = 32;
+            txt.bgColor = "#c30c30";
+            txt.borderColor = "#23cfcf";
+            txt.bold = true;
+            txt.italic = true;
+            Laya.stage.addChild(txt);
+        }
+    }
+
     class GameConfig {
         constructor() {
         }
@@ -174,6 +191,7 @@
             reg("script/GameControl.ts", GameControl);
             reg("script/Bullet.ts", Bullet);
             reg("script/DropBox.ts", DropBox);
+            reg("script/Title.ts", Title);
         }
     }
     GameConfig.width = 640;
