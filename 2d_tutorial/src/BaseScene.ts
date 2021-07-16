@@ -26,7 +26,7 @@ export default class BaseScene extends ui.BaseSceneUI {
 
     
 
-    this.socket.connectByUrl("ws://laya-demo-game-backend.alpha-supsys.com/api/beta/ws");
+    this.socket.connectByUrl("wss://laya-demo-game-backend.alpha-supsys.com/api/beta/ws");
   }
 
   private onOpen(e): void {
